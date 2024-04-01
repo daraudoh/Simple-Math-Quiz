@@ -17,8 +17,7 @@ num2 = random_number(1, 10)
 def random_question_add():
     question = input("What is " + str(num1) + " " + "+" + " " + str(num2) + " ?")
     print (question)
-    correct_answer = "The correct answer is: ", num1 + num2
-    print (correct_answer)
+    
 
 def random_question_sub():
     return "What is " + str(num1) + " " + "-" + " " + str(num2) + " ?"
@@ -34,10 +33,16 @@ def random_question_div():
 
 
 random_question_add()
+#correct answer may need own def to get userannswer = correcT answer
 
+def user_answer_add():
+    user_answer = input("What is your answer? ")
+    print (user_answer)
 
+def correct_answer_add(): 
+    correct_answer = "The correct answer is: ", num1 + num2
+    print (correct_answer)    
 
-    
    
 
 
