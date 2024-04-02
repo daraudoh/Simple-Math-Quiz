@@ -4,6 +4,11 @@ username = input("What is your name? ")
 #greeting the user and awellcoming them to the quiz
 print("Hello " + username + ", Welcome to your Math Quiz!")
 
+#setting the score to 0
+score = 0
+
+print("To pass this quiz, you must score 8 or more points. Good Luck!")
+
 #defining the random number generator
 def random_number (num1, num2):
     import random
@@ -18,32 +23,82 @@ def random_question_add():
     question = ("What is " + str(num1) + " " + "+" + " " + str(num2) + " ?")
     print (question)
 
-def user_answer_add():
-    user_answer = input("Please type you answer here: ")
-    print (user_answer)
-
-def correct_answer_add(): 
-    correct_answer = "The correct answer is",  num1 + num2
-    print (correct_answer)  
-    
-
+#defining the random subtraction question generator
 def random_question_sub():
-    return "What is " + str(num1) + " " + "-" + " " + str(num2) + " ?"
-    print (random_question_sub())
+    question = "What is " + str(num1) + " " + "-" + " " + str(num2) + " ?"
+    print (question)
 
+#defining the random multiplication question generator
 def random_question_mult():
-    return "What is " + str(num1) + " " + "*" + " " + str(num2) + " ?"
-    print (random_question_mult())
+    question =  "What is " + str(num1) + " " + "*" + " " + str(num2) + " ?"
+    print (question)
 
+#defining the random division question generator
 def random_question_div():
-    return "What is " + str(num1) + " " + "/" + " " + str(num2) + " ?"
-    print (random_question_div())
+    question = "What is " + str(num1) + " " + "/" + " " + str(num2) + " ?"
+    print (question)
 
+#Adding the correct answer variables
+correct_answer_add = num1 + num2   
+correct_answer_sub = num1 - num2
+correct_answer_mult = num1 * num2
+correct_answer_div = num1 / num2
 
+#calling the random question functions
 random_question_add()
-user_answer_add()
-correct_answer_add()
-#correct answer may need own def to get userannswer = correcT answer
+user_answer_add = int(input("Please type you answer here: "))
+
+random_question_sub()
+user_answer_sub = int(input("Please type you answer here: "))
+
+random_question_mult()
+user_answer_mult = int(input("Please type you answer here: "))
+
+random_question_div()
+user_answer_div = int(input("Please type you answer here: "))
+
+random_question_mult()
+user_answer_mult = int(input("Please type you answer here: "))
+
+
+#Showing the correct answers
+while score < 8:
+    if user_answer_add == correct_answer_add:
+        score += 2
+        print ("You are correct!")
+    else:
+        print ("This is incorrect, the correct answer is: " + str(correct_answer_add) + ".")
+    if user_answer_sub == correct_answer_sub:
+        score += 2
+        print ("You are correct!")
+    else:
+        print ("This is incorrect, the correct answer is: " + str(correct_answer_sub) + ".")
+    if user_answer_mult == correct_answer_mult:
+        score += 2
+        print ("You are correct!")
+    else:
+        print ("This is incorrect, the correct answer is: " + str(correct_answer_mult) + ".")
+    if user_answer_div == correct_answer_div:
+        score += 2
+        print ("You are correct!")
+    else:
+        print ("This is incorrect, the correct answer is: " + str(correct_answer_div) + ".")
+    break
+
+print ("Your score is: " + str(score))
+
+if score >= 8:
+    print ("Congratulations " + username + ", you have passed the quiz!")   
+
+else:
+    print ("Sorry " + username + ", you have failed the quiz. Better luck next time!")  
+
+
+
+
+
+
+
 
  
 
