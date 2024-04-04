@@ -15,7 +15,7 @@ To create a simple math quiz for elementary school students that:
  8. Lets the student know their score at the end of the quiz.
  9. Lets the student know if they based or failed the quiz.     
 
-Project Steps
+### Project Steps
 1.	Used the input function to get the student’s name inside the username variable.
 2.	Printed the welcome message on the screen using the print function and let the student know how many points are needed to pass the test.
 3.	Set the score variable to 0.
