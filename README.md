@@ -23,22 +23,18 @@ Project Steps
 5.	Created a user-defined function named random_number to generate a random number for variables num1 and num2.
 6.	Assigned the num1 variable to generate a random number between 10 and 20 and the num2 variable to generate a random number between 1 and 10.
 7.	Created 4 user-defined question function that:
-a.	Enables our score variable to be modified inside the function by using the global keyword.
-b.	Generate a random number for our num1 and num2 variables. 
-c.	Creates a question variable that prints an addition, subtraction, multiplication, and division question using the num1 and num2 variables set within our function.
-
-d.	Converting the num1 and num2 variables to strings to concatenate the other strings within the question.
-
-e.	Prints the question.
-
-f.	Sets the correct answer variable to equate to the random num 1 and num2 variables based on the math operation used.
-
-g.	Used the input function to get the students answer, converted the user answer to an integer and set it within the user answer variable.
-
-h.	Used the if else statements to print ‘correct’ or ‘incorrect’ along with the correct answer if incorrect by comparing the user’s answer to the correct answer variables.
-
-i.	Increases the score by 1 if the answer is correct.
-
+    -	Enables our score variable to be modified inside the function by using the global keyword.
+    - Generate a random number for our num1 and num2 variables. 
+    - Creates a question variable that prints an addition, subtraction, multiplication, and division question using the num1 and 
+      num2 variables set within our function.
+    - Converting the num1 and num2 variables to strings to concatenate the other strings within the question.
+    -	Prints the question.
+    - Sets the correct answer variable to equate to the random num 1 and num2 variables based on the math operation used.
+    - Used the input function to get the students answer, converted the user answer to an integer and set it within the user 
+      answer variable.
+    - Used the if else statements to print ‘correct’ or ‘incorrect’ along with the correct answer if incorrect by comparing the 
+      user’s answer to the correct answer variables.
+    -	Increases the score by 1 if the answer is correct.
 8.	Called the user- defined question function 10 times for a total of 10 questions.
 9.	Showed the student their score using the print function and the score variable.
 10.	Used the if else statements and the print function to let the student know if they passed or failed the test based on the number of points accumulated.
