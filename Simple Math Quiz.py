@@ -1,7 +1,7 @@
 #asking the user for their name
 username = input("What is your name? ")
 
-#greeting the user and awellcoming them to the quiz
+#greeting the user and welcoming them to the quiz
 print("Hello " + username + ", Welcome to your Math Quiz!")
 
 #setting the score to 0
