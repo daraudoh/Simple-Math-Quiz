@@ -23,7 +23,7 @@ Project Steps
 5.	Created a user-defined function named random_number to generate a random number for variables num1 and num2.
 6.	Assigned the num1 variable to generate a random number between 10 and 20 and the num2 variable to generate a random number between 1 and 10.
 7.	Created 4 user-defined question function that:
-    a.	Enables our score variable to be modified inside the function by using the global keyword.
+a.	Enables our score variable to be modified inside the function by using the global keyword.
 b.	Generate a random number for our num1 and num2 variables. 
 c.	Creates a question variable that prints an addition, subtraction, multiplication, and division question using the num1 and num2 variables set within our function.
 
