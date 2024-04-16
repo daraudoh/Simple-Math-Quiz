@@ -73,8 +73,8 @@ def random_question_div():
     num2 = random_number(1, 10)
     question = "What is " + str(num1) + " " + "/" + " " + str(num2) + " ?"
     print (question)
-    correct_answer_div = num1 / num2
-    user_answer_div = int(input("Please type you answer here: "))
+    correct_answer_div = float (num1 / num2)
+    user_answer_div = float (input("Please type you answer here: "))
     if user_answer_div == correct_answer_div:
         score += 1
         print ("You are correct!")
